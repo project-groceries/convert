@@ -24,7 +24,10 @@ export default function Home() {
 
         {/* Open Graph / Facebook */}
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://projectgroceries.com/" />
+        <meta
+          property="og:url"
+          content="https://convert.projectgroceries.com/"
+        />
         <meta
           property="og:title"
           content="Convert - A conversion tool for common ingredient measurements"
@@ -35,12 +38,15 @@ export default function Home() {
         />
         <meta
           property="og:image"
-          content="https://res.cloudinary.com/projectgroceries/image/upload/v1599364438/Project_Groceries_Card_Image_jjm3gs.png"
+          content="https://res.cloudinary.com/projectgroceries/image/upload/v1601877136/Convert_Meta_Image_xzs3x2.png"
         />
 
         {/* Twitter */}
         <meta property="twitter:card" content="summary_large_image" />
-        <meta property="twitter:url" content="https://projectgroceries.com/" />
+        <meta
+          property="twitter:url"
+          content="https://convert.projectgroceries.com/"
+        />
         <meta
           property="twitter:title"
           content="Convert - A conversion tool for common ingredient measurements"
@@ -51,7 +57,7 @@ export default function Home() {
         />
         <meta
           property="twitter:image"
-          content="https://res.cloudinary.com/projectgroceries/image/upload/v1599364438/Project_Groceries_Card_Image_jjm3gs.png"
+          content="https://res.cloudinary.com/projectgroceries/image/upload/v1601877136/Convert_Meta_Image_xzs3x2.png"
         ></meta>
       </Head>
 
