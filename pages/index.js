@@ -1,4 +1,5 @@
 import Head from "next/head";
+import ShareButtons from "../components/ShareButtons";
 import UndrawUnderConstruction from "../components/svg/UndrawUnderConstruction";
 
 export default function Home() {
@@ -70,6 +71,8 @@ export default function Home() {
           <UndrawUnderConstruction className="w-96 mb-8" />
           <h2>Coming Soon</h2>
         </div>
+
+        <ShareButtons />
       </main>
 
       <footer className="flex items-center justify-center border-t border-solid border-gray-400">
