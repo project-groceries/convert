@@ -120,7 +120,7 @@ const Convert = () => {
   const updateToUnit = updateUnit(setToUnit, setFromAmount, fromUnit, toAmount);
 
   return (
-    <div className="my-12 flex items-center">
+    <div className="my-12 flex items-center justify-center flex-wrap">
       <div className="flex flex-col m-5">
         <p className="opacity-0">From</p>
         <input
@@ -148,10 +148,10 @@ const Convert = () => {
         />
       </div>
       {fromUnit.value.measurement == toUnit.value.measurement ? (
-        <span>{"<==>"}</span>
+        <span className="sm:hidden">{"<==>"}</span>
       ) : (
         <>
-          <span>{"<==>"}</span>
+          <span className="sm:hidden">{"<==>"}</span>
           <div className="m-5">
             <p>
               Density (kg/m<sup>3</sup>){" "}
@@ -206,7 +206,7 @@ const Convert = () => {
               }}
             />
           </div>
-          <span>{"<==>"}</span>
+          <span className="sm:hidden">{"<==>"}</span>
         </>
       )}
       <div className="flex flex-col m-5">
