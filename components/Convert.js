@@ -1,5 +1,7 @@
+import Tippy from "@tippy.js/react";
 import { useState } from "react";
 import Select from "react-select";
+import { densities } from "../lib/densities";
 import { volumeToKilograms, weightToLitres } from "../lib/measurement";
 
 const options = [
@@ -26,7 +28,11 @@ const Convert = () => {
     label: "Kilograms",
   });
 
-  const [density, setDensity] = useState(500);
+  const [density, setDensity] = useState(845);
+  const [densityIngredient, setDensityIngredient] = useState({
+    value: 0.845350568,
+    label: "Sugar, granulated",
+  });
 
   const updateAmount = (setAmountA, setAmountB, unitA, unitB) => (amount) => {
     setAmountA(amount);
@@ -116,6 +122,7 @@ const Convert = () => {
   return (
     <div className="my-12 flex items-center">
       <div className="flex flex-col m-5">
+        <p className="opacity-0">From</p>
         <input
           type="number"
           name="fromAmount"
@@ -145,21 +152,65 @@ const Convert = () => {
       ) : (
         <>
           <span>{"<==>"}</span>
-          <label htmlFor="density" className="m-5">
-            Density
-            <input
-              type="number"
-              name="density"
-              id="density"
-              value={density}
-              onChange={(e) => updateDensity(e.target.value)}
-              className="inp w-26 rounded"
+          <div className="m-5">
+            <p>
+              Density (kg/m<sup>3</sup>){" "}
+              <Tippy
+                content="An ingredient density is required to convert between weight and volume units."
+                placement="top"
+              >
+                <svg
+                  viewBox="0 0 24 24"
+                  focusable="false"
+                  role="img"
+                  fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="w-5 inline-block text-gray-700"
+                >
+                  <title>Info icon</title>
+                  <path fill="none" d="M0 0h24v24H0z"></path>
+                  <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"></path>
+                </svg>
+              </Tippy>
+              <input
+                type="number"
+                name="density"
+                id="density"
+                value={density}
+                onChange={(e) => {
+                  updateDensity(e.target.value);
+                  setDensityIngredient(null);
+                }}
+                className="inp"
+              />
+            </p>
+            <Select
+              value={densityIngredient}
+              options={densities}
+              onChange={(data, meta) => {
+                setDensityIngredient(data);
+
+                if (data) {
+                  updateDensity(Math.round(data.value * 1000));
+                }
+              }}
+              inputId="densityIngredient"
+              placeholder="Select an ingredient..."
+              styles={{
+                container: (styles) => ({ ...styles, width: "15rem" }),
+                control: (styles) => ({
+                  ...styles,
+                  borderTopLeftRadius: 0,
+                  borderTopRightRadius: 0,
+                }),
+              }}
             />
-          </label>
+          </div>
           <span>{"<==>"}</span>
         </>
       )}
       <div className="flex flex-col m-5">
+        <p className="opacity-0">To</p>
         <input
           type="number"
           name="toAmount"
