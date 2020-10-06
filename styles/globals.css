@@ -23,6 +23,17 @@ small {
   @apply text-gray-700;
 }
 
+.inp {
+  @apply block rounded-t border border-solid border-gray-300 w-60 p-3 text-xl text-center transition duration-75 ease-in-out;
+}
+.inp:hover {
+  @apply border-gray-500;
+}
+
+/* .inp[type="number"] {
+  @apply w-20;
+} */
+
 @tailwind utilities;
 
 @import url("https://rsms.me/inter/inter.css");

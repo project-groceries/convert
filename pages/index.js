@@ -1,6 +1,6 @@
+import Convert from "../components/Convert";
 import Meta from "../components/Meta";
 import ShareButtons from "../components/ShareButtons";
-import UndrawUnderConstruction from "../components/svg/UndrawUnderConstruction";
 
 export default function Home() {
   return (
@@ -15,10 +15,7 @@ export default function Home() {
 
         <p>A conversion tool for common ingredient measurements</p>
 
-        <div className="my-12">
-          <UndrawUnderConstruction className="w-96 mb-8" />
-          <h2>Coming Soon</h2>
-        </div>
+        <Convert />
 
         <ShareButtons />
       </main>
