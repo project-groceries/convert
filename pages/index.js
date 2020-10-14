@@ -21,11 +21,7 @@ export default function Home() {
       </main>
 
       <footer className="flex items-center justify-center border-t border-solid border-gray-400">
-        <a
-          href="https://projectgroceries.com"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <a href="https://projectgroceries.com" target="_blank">
           Made with ❤️ by <span className="sm:hidden">the team at </span>
           <img
             src="/favicon.svg"
