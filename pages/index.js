@@ -1,4 +1,5 @@
 import Convert from "../components/Convert";
+import Feedback from "../components/Feedback";
 import Meta from "../components/Meta";
 import ShareButtons from "../components/ShareButtons";
 
@@ -17,7 +18,11 @@ export default function Home() {
 
         <Convert />
 
-        <ShareButtons />
+        <div>
+          <ShareButtons />
+
+          <Feedback />
+        </div>
       </main>
 
       <footer className="flex items-center justify-center border-t border-solid border-gray-400">

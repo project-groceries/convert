@@ -1,6 +1,6 @@
 const ShareButtons = () => {
   return (
-    <div>
+    <>
       {/* Sharingbutton Facebook */}
       <a
         className="resp-sharing-button__link"
@@ -63,7 +63,7 @@ const ShareButtons = () => {
           Share by E-Mail
         </div>
       </a>
-    </div>
+    </>
   );
 };
 

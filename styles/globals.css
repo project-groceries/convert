@@ -309,3 +309,14 @@ a {
 .tippy-content {
   padding: 5px 9px;
 }
+
+/* Reach Dialog Styles */
+[data-reach-dialog-overlay] {
+  z-index: 100;
+}
+
+[data-reach-dialog-content] {
+  box-shadow: rgb(152, 152, 152) 2px 2px 5px 0;
+  border: 1px solid rgb(152, 152, 152);
+  border-radius: 6px;
+}
