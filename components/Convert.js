@@ -1,8 +1,11 @@
 import Tippy from "@tippy.js/react";
 import { useState } from "react";
 import Select from "react-select";
-import { densities } from "../lib/densities";
-import { volumeToKilograms, weightToLitres } from "../lib/measurement";
+import {
+  volumeToKilograms,
+  weightToLitres,
+} from "@project-groceries/utils/build/measurement";
+import { densities } from "@project-groceries/utils/build/densities";
 
 const options = [
   { value: { amount: 1000, measurement: "weight" }, label: "Grams" },
