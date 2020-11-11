@@ -25,11 +25,9 @@ const Feedback = () => {
           />
         </svg>
         Feedback
-        <span className="absolute flex right-0 top-0 transform translate-x-5 -translate-y-4">
+        <span className="absolute flex right-0 top-0 transform translate-x-2 -translate-y-2 w-4 h-4">
           <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
-          <span className="relative inline-flex rounded-lg bg-green-500 text-sm p-1">
-            New
-          </span>
+          <span className="relative inline-flex rounded-full bg-green-500 text-sm p-1 w-4 h-4"></span>
         </span>
       </button>
       <Dialog
