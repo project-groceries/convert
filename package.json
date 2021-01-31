@@ -12,11 +12,13 @@
     "@reach/dialog": "^0.11.2",
     "@tippy.js/react": "^3.1.1",
     "airtable": "^0.10.0",
+    "autoprefixer": "^10.2.4",
     "fathom-client": "^3.0.0",
     "next": "^10.0.0",
+    "postcss": "^8.2.4",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-select": "^3.1.0",
-    "tailwindcss": "^1.8.10"
+    "tailwindcss": "^2.0.2"
   }
 }
