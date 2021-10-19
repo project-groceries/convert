@@ -47,7 +47,8 @@ export default function Home() {
         }}
       >
         <a href="https://projectgroceries.com" target="_blank">
-          Made with ❤️ by <span className="sm:hidden">the team at </span>
+          Made with <span className="text-red-500">❤️</span> by{" "}
+          <span className="sm:hidden">the team at </span>
           <img
             src="/favicon.svg"
             alt="Project Groceries Logo"

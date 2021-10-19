@@ -43,7 +43,7 @@ const Feedback = () => {
         </p>
         <form action="/api/feedback" method="POST" className="p-3 space-y-3">
           <label htmlFor="email" className="block">
-            Email (optional)
+            Email (Optional)
             <small className="block">
               So we can follow up and notify you of relevant developments.
             </small>
@@ -70,13 +70,13 @@ const Feedback = () => {
               type="submit"
               className="p-2 bg-green-400 hover:bg-green-500 transition-colors ease-in-out duration-150 rounded"
             >
-              Send my feedback
+              Send My Feedback
             </button>
             <button
               onClick={close}
               className="p-2 bg-orange-400 hover:bg-orange-500 transition-colors ease-in-out duration-150 rounded"
             >
-              Never mind
+              Never Mind
             </button>
           </div>
         </form>
