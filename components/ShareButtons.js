@@ -4,7 +4,7 @@ const ShareButtons = () => {
       {/* Sharingbutton Facebook */}
       <a
         className="resp-sharing-button__link"
-        href="https://facebook.com/sharer/sharer.php?u=https%3A%2F%2Fconvert.projectgroceries.com%2F"
+        href="https://facebook.com/sharer/sharer.php?u=https%3A%2F%2Fconvert.class-cart.com%2F"
         target="_blank"
         rel="noopener"
         aria-label="Share on Facebook"
@@ -25,7 +25,7 @@ const ShareButtons = () => {
       {/* Sharingbutton Twitter */}
       {/* <a
         className="resp-sharing-button__link"
-        href="https://twitter.com/intent/tweet/?text=A%20conversion%20tool%20for%20common%20ingredient%20measurements&amp;url=https%3A%2F%2Fconvert.projectgroceries.com%2F"
+        href="https://twitter.com/intent/tweet/?text=A%20conversion%20tool%20for%20common%20ingredient%20measurements&amp;url=https%3A%2F%2Fconvert.class-cart.com%2F"
         target="_blank"
         rel="noopener"
         aria-label="Share on Twitter"
@@ -46,7 +46,7 @@ const ShareButtons = () => {
       {/* Sharingbutton E - Mail */}
       <a
         className="resp-sharing-button__link"
-        href="mailto:?subject=A%20conversion%20tool%20for%20common%20ingredient%20measurements&amp;body=https%3A%2F%2Fconvert.projectgroceries.com%2F"
+        href="mailto:?subject=A%20conversion%20tool%20for%20common%20ingredient%20measurements&amp;body=https%3A%2F%2Fconvert.class-cart.com%2F"
         target="_self"
         rel="noopener"
         aria-label="Share by E-Mail"

@@ -13,7 +13,7 @@ const Meta = () => (
     />
     <meta
       name="description"
-      content="Brought to you by the folks at Project Groceries, this converter is a handy tool that converts between Kilograms, Grams, Litres, Cups, Tablespoons, Teaspoons, Milligrams, and Millilitres."
+      content="Brought to you by the folks at ClassCart, this converter is a handy tool that converts between Kilograms, Grams, Litres, Cups, Tablespoons, Teaspoons, Milligrams, and Millilitres."
     />
 
     {/* Open Graph / Facebook */}
@@ -25,7 +25,7 @@ const Meta = () => (
     />
     <meta
       property="og:description"
-      content="Brought to you by the folks at Project Groceries, this converter is a handy tool that converts between Kilograms, Grams, Litres, Cups, Tablespoons, Teaspoons, Milligrams, and Millilitres."
+      content="Brought to you by the folks at ClassCart, this converter is a handy tool that converts between Kilograms, Grams, Litres, Cups, Tablespoons, Teaspoons, Milligrams, and Millilitres."
     />
     <meta
       property="og:image"
@@ -41,7 +41,7 @@ const Meta = () => (
     />
     <meta
       property="twitter:description"
-      content="Brought to you by the folks at Project Groceries, this converter is a handy tool that converts between Kilograms, Grams, Litres, Cups, Tablespoons, Teaspoons, Milligrams, and Millilitres."
+      content="Brought to you by the folks at ClassCart, this converter is a handy tool that converts between Kilograms, Grams, Litres, Cups, Tablespoons, Teaspoons, Milligrams, and Millilitres."
     />
     <meta
       property="twitter:image"

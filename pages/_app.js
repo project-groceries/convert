@@ -10,7 +10,7 @@ function MyApp({ Component, pageProps }) {
   useEffect(() => {
     // Initialize Fathom when the app loads
     Fathom.load("HXBSIFJO", {
-      includedDomains: ["convert.projectgroceries.com"],
+      includedDomains: ["convert.class-cart.com"],
     });
 
     function onRouteChangeComplete() {
