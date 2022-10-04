@@ -47,6 +47,12 @@ const Meta = () => (
       property="twitter:image"
       content="https://res.cloudinary.com/projectgroceries/image/upload/v1601877136/Convert_Meta_Image_siit36.png"
     ></meta>
+
+    <script
+      defer
+      data-domain="convert.class-cart.com"
+      src="https://plausible.io/js/plausible.js"
+    />
   </Head>
 );
 
